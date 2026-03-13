@@ -1,12 +1,13 @@
 # webserv_42
 
-A lightweight HTTP server written in C as part of the 42 curriculum.
+A lightweight HTTP server written in C as part of the 42 school curriculum.
 
-Overview
+About
 
-Webserv is a custom implementation of a minimal HTTP server designed to better understand how the web actually works under the hood. Instead of relying on existing servers like Nginx or Apache, the goal of this project is to build one from scratch using low-level system calls.
+Webserv is a custom implementation of a minimal HTTP server built from scratch using low-level system calls.
+The goal of this project is to understand how real web servers work by recreating the core mechanisms behind HTTP communication, request parsing, and connection handling.
 
-The server listens for incoming TCP connections, parses HTTP requests, and returns appropriate HTTP responses while serving static files or executing CGI scripts.
+Instead of relying on existing servers like Nginx or Apache, this project focuses on building the essential components of a web server manually.
 
 Features
 
@@ -14,9 +15,9 @@ HTTP/1.1 request parsing
 
 Static file serving
 
-Multiple server configuration (similar to virtual hosts)
+Support for GET, POST, and DELETE
 
-Support for GET, POST and DELETE methods
+Multiple server configurations (virtual hosts)
 
 File uploads
 
@@ -24,45 +25,27 @@ CGI execution
 
 Custom error pages
 
-Non-blocking I/O with event multiplexing
+Non-blocking I/O handling
 
-Basic configuration file support
+Key Concepts
 
-Technical Challenges
+During this project we explored several fundamental topics:
 
-Building a web server from scratch reveals several core challenges:
+TCP socket programming
 
-Network programming using sockets
+HTTP protocol internals
 
-Handling multiple clients simultaneously without blocking
+Event-driven server architecture
 
-Correctly parsing HTTP requests and headers
+Concurrent client handling
 
-Managing file I/O and large responses
+Process management for CGI execution
 
-Designing a configuration system similar to real web servers
-
-Implementing CGI execution and process management
-
-Special attention was given to efficient connection handling using non-blocking sockets and an event-driven architecture.
-
-Learning Outcomes
-
-This project provides a deeper understanding of:
-
-How HTTP communication works
-
-How production web servers manage connections
-
-Low-level UNIX system calls
-
-Event-driven server design
-
-Robust error handling in network applications
+Configuration parsing
 
 Usage
 
-Compile the project:
+Build the project:
 
 make
 
@@ -70,9 +53,9 @@ Run the server with a configuration file:
 
 ./webserv config.conf
 
-Then open a browser and connect to:
+Then open:
 
 http://localhost:8080
-Authors
+Project Context
 
-Project developed as part of the 42 curriculum.
+This project was developed as part of the 42 curriculum, which focuses on low-level programming and system understanding.

@@ -11,38 +11,38 @@ Instead of relying on existing servers like Nginx or Apache, this project focuse
 
 # Features
 
-HTTP/1.1 request parsing
+-HTTP/1.1 request parsing
 
-Static file serving
+-Static file serving
 
-Support for GET, POST, and DELETE
+-Support for GET, POST, and DELETE
 
-Multiple server configurations (virtual hosts)
+-Multiple server configurations (virtual hosts)
 
-File uploads
+-File uploads
 
-CGI execution
+-CGI execution
 
-Custom error pages
+-Custom error pages
 
-Non-blocking I/O handling
+-Non-blocking I/O handling
 
 
 # Key Concepts
 
-During this project we explored several fundamental topics:
+-During this project we explored several fundamental topics:
 
-TCP socket programming
+-TCP socket programming
 
-HTTP protocol internals
+-HTTP protocol internals
 
-Event-driven server architecture
+-Event-driven server architecture
 
-Concurrent client handling
+-Concurrent client handling
 
-Process management for CGI execution
+-Process management for CGI execution
 
-Configuration parsing
+-Configuration parsing
 
 
 # Usage

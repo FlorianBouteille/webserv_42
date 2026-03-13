@@ -9,7 +9,7 @@ The goal of this project is to understand how real web servers work by recreatin
 
 Instead of relying on existing servers like Nginx or Apache, this project focuses on building the essential components of a web server manually.
 
-Features
+#Features
 
 HTTP/1.1 request parsing
 
@@ -27,7 +27,8 @@ Custom error pages
 
 Non-blocking I/O handling
 
-Key Concepts
+
+#Key Concepts
 
 During this project we explored several fundamental topics:
 
@@ -43,7 +44,8 @@ Process management for CGI execution
 
 Configuration parsing
 
-Usage
+
+#Usage
 
 Build the project:
 
@@ -56,6 +58,7 @@ Run the server with a configuration file:
 Then open:
 
 http://localhost:8080
-Project Context
+
+#Project Context
 
 This project was developed as part of the 42 curriculum, which focuses on low-level programming and system understanding.

@@ -1,0 +1,75 @@
+<html>
+    <head>
+		<link rel="stylesheet" href="css/style.css">
+		<meta charset="utf8">
+    	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+		</style>
+	</head>
+    <body>
+		<header>
+        	<h1 class="title">
+            	Bienvenue sur le site des chaussettes !
+        	</h1>
+			<h2>
+				Commandez chez nous pour toujours plus de webserv
+			</h2>
+		</header>
+		<div class="nav1">
+			<a href="index.html">&larr; Retour</a>
+		</div>
+        <h3>Quelle chaussette es-tu ?</h3>
+        <main class="quizzpage">
+			<div class="quizz">
+				<form method="POST" action="/cgi-bin/quizz.py">
+					<h3>tu es plutôt team :</h3>
+					<input type="radio" name="choice" value="1" id="Pixar">
+					<label for = "Pixar">Pixar</label></br>
+					<input type="radio" name="choice" value="2" id="Marvel">
+					<label for = "Marvel">Marvel</label></br>
+					<input type="radio" name="choice" value="3" id="Disney">
+					<label for = "Disney">Disney</label></br>
+					<h3>Tu es plutôt team</h3>
+					<input type="radio" name="qualite" value="1" id="Star academy">
+					<label for = "Star academy">Star academy</label></br>
+					<input type="radio" name="qualite" value="2" id="Top chef">
+					<label for = "Top chef">Top chef</label></br>
+					<input type="radio" name="qualite" value="3" id="Koh Lanta">
+					<label for = "Koh Lanta">Koh Lanta</label></br>
+					<h3>Une vieille dame cherche une place dans le metro :</h3>
+					<input type="radio" name="metro" value="1" id="metro1">
+					<label for = "metro1">Tu lui laisses ta place</label></br>
+					<input type="radio" name="metro" value="2" id="metro2">
+					<label for = "metro2">Tu l'ignores et te plonges dans candy crush</label></br>
+					<input type="radio" name="metro" value="3" id="metro3">
+					<label for = "metro3">Tu as bien merité cette place, quelqu'un d'autre va bien se sacrifier</label></br>
+					<h3>Pour la pause dej :</h3>
+					<input type="radio" name="dej" value="1" id="dej1">
+					<label for = "dej1">Tu commandes un bon ptit plat sur steakOverflow</label></br>
+					<input type="radio" name="dej" value="2" id="dej2">
+					<label for = "dej2">Ta bento est toute prete dans le frigo</label></br>
+					<input type="radio" name="dej" value="3" id="dej3">
+					<label for = "dej3">Tu es completement decale et ton hygiene de vie est deplorable, tu mangeras quand tu auras un CDI</label></br>
+					<h3>Tu as un rendez-vous a 10h30 :</h3>
+					<input type="radio" name="rdv" value="1" id="rdv1">
+					<label for = "rdv1">Tu arrives a 10h30 pile</label></br>
+					<input type="radio" name="rdv" value="2" id="rdv2">
+					<label for = "rdv2">Tu es toujours en retard, tu pars de chez toi a 10h20...</label></br>
+					<input type="radio" name="rdv" value="3" id="rdv3">
+					<label for = "rdv3">Tu arrives a 10h, juste au cas ou</label></br>
+					<h3>Quel est le meilleur starter ? </h3>
+					<input type="radio" name="pokemon" value="1" id="pokemon1">
+					<label for = "pokemon1">Salameche, le classique</label></br>
+					<input type="radio" name="pokemon" value="2" id="pokemon2">
+					<label for = "pokemon2">Carapuce, le facétieux</label></br>
+					<input type="radio" name="pokemon" value="3" id="pokemon3">
+					<label for = "pokemon3">Bulbizarre, l'outsider</label></br></br>
+					<input type="submit" value="Resultat !">
+				</form>
+			</div>
+			<div class="answerContainer">
+				<!-- Le résultat du quizz s'affichera ici après soumission -->
+			</div>
+        </main>
+    </body>
+</html>
